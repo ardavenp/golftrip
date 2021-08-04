@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Drag and Drop Touch</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="container">
+    <div class="list">
+      <div id="1" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Nate</p>
+      </div>
+      <div id="2" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Ben D</p>
+      </div>
+      <div id="3" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Walz</p>
+      </div>
+      <div id="4" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Kubes</p>
+      </div>
+      <div id="5" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Lance</p>
+      </div>
+      <div id="6" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Greg</p>
+      </div>
+      <div id="7" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Kuznar</p>
+      </div>
+      <div id="8" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Buyer</p>
+      </div>
+      <div id="9" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Q</p>
+      </div>
+      <div id="10" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>JD</p>
+      </div>
+      <div id="11" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Andy D</p>
+      </div>
+      <div id="12" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Uncle B</p>
+      </div>
+      <div id="13" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Putz</p>
+      </div>
+      <div id="14" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Kent</p>
+      </div>
+      <div id="15" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Singer</p>
+      </div>
+      <div id="16" draggable="true" class="draggable" onDragStart="dragStart(event)" onDragEnd="dragEnd( event )">
+        <p>Price</p>
+      </div>
+    </div>
+    <div class="drop-zone" onDragEnter="dragEnter( event )" onDragOver="dragOver( event )" onDragLeave="dragLeave( event )" onDrop="dragDrop( event )">
+      <h1>Team 1</h1>
+    </div>
+    <div class="drop-zone drop-zone--col2" onDragEnter="dragEnter( event )" onDragOver="dragOver( event )" onDragLeave="dragLeave( event )" onDrop="dragDrop( event )">
+       <h1>Team 2</h1>
+    </div>
+  </div>
+  <div class="console">
+    <h4>CONSOLE:</h4>
+  </div>
+  <script src="https://rawgit.com/timruffles/ios-html5-drag-drop-shim/hold-to-drag-issue/release/index.js"></script>
+  <!--optional import of scroll behaviour
+  <script src="https://rawgit.com/timruffles/ios-html5-drag-drop-shim/hold-to-drag-issue/release/scroll-behaviour.min.js"></script>-->
+  <script>
+    // options are optional ;)
+    MobileDragDrop.polyfill({
+      // use this to make use of the scroll behaviour
+      // dragStartConditionOverride: false,
+      // dragImageCenterOnTouch: true,
+      // iterationInterval: 1000,
+      forceApply: true,
+      holdToDrag: 500,
+      dragImageTranslateOverride: MobileDragDrop.scrollBehaviourDragImageTranslateOverride
+    });
+  </script>
+</body>
+<!-- partial -->
+  <script src='https://rawgit.com/timruffles/ios-html5-drag-drop-shim/master/release/index.min.js'></script>
+<script src='https://rawgit.com/timruffles/ios-html5-drag-drop-shim/master/release/scroll-behaviour.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

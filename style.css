@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+div {
+  display: block;
+  margin: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  margin-left: 20px;
+  font-family: "Raleway";
+  font-size: 18px;
+}
+
+.list {
+  margin-top: 35px;
+}
+
+.container {
+  display: flex;
+  min-height: 400px;
+  width: 675px;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+}
+
+.container > * {
+  flex: 0 0 auto;
+}
+
+.console {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.console > h4 {
+  margin: 5px;
+}
+
+.draggable {
+  background-color: green;
+  font-family: "Raleway";
+  color: white;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  padding-top: 1px;
+  box-sizing: border-box;
+  float: left;
+  clear: left;
+}
+.draggable--active {
+  opacity: 0.5;
+}
+
+.drop-zone {
+  min-height: 100px;
+  width: 200px;
+  border: 2px solid #666;
+}
+.drop-zone--active {
+  background-color: cadetblue;
+}
