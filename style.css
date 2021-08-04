@@ -18,7 +18,7 @@ h1 {
 .container {
   display: flex;
   min-height: 400px;
-  width: 675px;
+  width: 900px;
   overflow-x: auto;
   border: 1px solid #ccc;
 }
